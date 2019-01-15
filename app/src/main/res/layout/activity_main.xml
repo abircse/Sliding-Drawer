@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Click on button to open drawer"
+        android:textSize="20sp">
+    </TextView>
+
+    <!-- Sliding drawer contatinig one handle view and one content layout that is hidden -->
+    <SlidingDrawer
+        android:id="@+id/SlidingDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:content="@+id/contentLayout"
+        android:handle="@+id/slideButton"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <!-- Handle button -->
+        <Button
+            android:id="@+id/slideButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:text="Show"
+            android:textColor="#ffffff" >
+        </Button>
+
+        <!-- Content Layout -->
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFCC"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/colorPrimary"
+                android:text="Button 1"
+                android:textColor="#ffffff" >
+            </Button>
+
+            <Button
+                android:id="@+id/Button02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/colorPrimary"
+                android:text="Button 2"
+                android:textColor="#ffffff" >
+            </Button>
+
+            <Button
+                android:id="@+id/Button03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/colorPrimary"
+                android:text="Button 3"
+                android:textColor="#ffffff" >
+            </Button>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/colorPrimary"
+                android:text="Text View Item"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </SlidingDrawer>
+
+</LinearLayout>
